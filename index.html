@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>神预 AI链上二元预测</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <h1>神预 智能预测生态</h1>
+            <div class="wallet-info" id="walletBox">
+                <button class="connect-wallet" id="connectWalletBtn">连接钱包</button>
+            </div>
+        </header>
+
+        <div class="data-card">
+            <div class="data-item">
+                <p class="label">可用余额</p>
+                <p class="value" id="userBalance">0.00 USDT</p>
+            </div>
+            <div class="data-item">
+                <p class="label">分红池</p>
+                <p class="value" id="poolAmount">0.00 USDT</p>
+            </div>
+        </div>
+
+        <div class="predict-card">
+            <h2>本轮加密货币多空预测</h2>
+            <div class="countdown">
+                剩余时间：<span id="countdownTime">00:05:00</span>
+            </div>
+            <div class="btn-group">
+                <button class="btn yes-btn" id="yesBtn">YES 看涨</button>
+                <button class="btn no-btn" id="noBtn">NO 看跌</button>
+            </div>
+            <input type="number" class="bet-input" id="betAmount" placeholder="输入投注金额 最小0.001">
+        </div>
+
+        <div class="rule-card">
+            <h3>生态规则</h3>
+            <p>1. 获胜方平分当期奖池</p>
+            <p>2. 平台仅收取5%运维手续费</p>
+            <p>3. 节点分红+团队多级收益自动结算</p>
+            <p>4. 日流水达标即可解锁分红权益</p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
